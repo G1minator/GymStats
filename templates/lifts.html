@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- Standard issue HTML boilerplate -->
+<html>
+<head>
+    <title>GYM SBD STATS LETS GO</title>
+</head>
+<body>
+
+<!-- Creates a table to display PRs -->
+<h1> PRs </h1>
+<table border = "1">
+    <thead>
+        <tr>
+            <th>Name</th><th>Squat</th><th>Bench</th><th>Deadlift</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for name, stats in sbd.items() %}
+        <tr>
+            <td>{{name.capitalize()}}</td>
+            <td> {{stats.squat}}</td>
+            <td> {{stats.bench}}</td>
+            <td> {{stats.deadlift}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+
+</table>
+</body>
+</html>
