@@ -7,6 +7,6 @@ spec:
     app: liftstats
   ports:
     - protocol: TCP
-      port: 80 //external browser request
-      targetPort: 4000 //Flask inside container
-  type: NodePort //opens external TCP port for browsers
+      port: 80 
+      targetPort: 4000 
+  type: NodePort 
